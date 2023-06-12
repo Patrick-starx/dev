@@ -1,0 +1,34 @@
+1.创建新仓库
+	创建新文件夹，打开，然后执行 git init 以创建新的git仓库
+
+2.检出仓库
+	git clone /path/to/repository
+	git clone username@host:/path/to/repository
+3.工作流
+	1，工作目录
+	2.暂存区 index
+	3，head 最后一次提交的结果
+4.添加和提交
+	git add <filename> / * 提出更改(添加至暂存区)
+	git commit -m(message) "code commit message"  提交至HEAD，但是还没到远端repository
+
+5.推送改动
+	git push origin [master] 
+	git remote add origin <server>
+
+6.分支
+	git checkout -b <branch name>
+	git checkout master 且
+
+HEAD 指针
+
+相对引用： <> 通过hash value 提交记录
+	^ 向上移动1个提交记录
+	~<num> 向上移动多个提交记录
+撤销
+	本地 git reset . ..
+	远程 git revert .  ..
+整理提交记录
+	git cherry-pick . . . 
+	交互式rebase
+	
